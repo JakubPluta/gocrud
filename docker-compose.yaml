@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  postsdb:
+    container_name: postsdb
+    image: postgres:16-alpine
+    ports:
+      - '5432:5432'
+    volumes:
+      - postsdb:/var/lib/postgresql/data
+    env_file: 
+      - .env
+volumes:
+  postsdb:
+    driver: local
+
+
