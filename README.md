@@ -1,2 +1,1 @@
-# gorss
-RSS Aggregator written in go
+
